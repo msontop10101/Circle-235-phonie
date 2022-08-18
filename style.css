@@ -1,0 +1,191 @@
+/* Styling Page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px 0;
+  margin: 0;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/image-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styling Form */
+form {
+  background-color: rgba(44, 62, 80, 0.7);
+  width: 400px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Styling Form-title */
+h2 {
+  color: gold;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Open Sans', serif;
+}
+
+/* Styling Input */
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 3px;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+#tel {
+  width: 320px;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+::placeholder {
+  color: red;
+  
+}
+
+#image {
+  display: none;
+}
+
+.phoneField {
+  position: relative;
+/*   display: flex;
+  align-items: center;  */
+  margin-bottom: 20px;
+}    
+
+.phoneField > img {
+  position: absolute;
+  top: 12%;
+  left: 90%;
+  width: 20px;
+  height: 18px
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.35;
+}
+
+.alert-error {
+  color: red;
+  text-align: left;
+  margin-top: 5px;
+  display: none;
+  font-size: 12px;
+}
+
+/* Styling Button */
+button {
+  margin: 10px auto 10px auto;
+  width: 60%;
+  padding: 8px 20px 10px 20px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  height: 44px;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid gold;
+  padding: 6px 20px 12px 20px;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Styling Bottom */
+p {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+br {
+  display: none;
+}
+
+a {
+  color: gold;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-size: 19px;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width:500px) {
+  /* Styling Page */
+  body {
+    padding: 0;
+    display: unset;  
+    min-height: unset;
+    height: 100%;
+  }
+  
+  /* Styling Form */
+  form {
+    margin: 70px auto;
+    width: 290px;
+    max-width: 90%;
+    padding: 30px;
+  }
+
+  /* Styling Form-title */
+  h2 {
+    font-size: 35px;
+  }
+
+  /* Styling Input */
+  #tel {
+    width: 100%;
+  }
+
+  /* Styling Button */
+  button {
+    width: 80%;
+  }
+
+  /* Styling Bottom */
+  br {
+    display: block;
+  }
+
+}

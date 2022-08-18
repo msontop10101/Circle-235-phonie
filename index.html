@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/phone.jpg" type="image/x-icon">
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <!-- Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- International Number Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+
+  <form id="form">
+
+    <h2>Sign Up</h2>
+
+    <div class="form-control">
+      <input type="text" name="fname" placeholder="First Name" required>
+    </div>
+
+    <div class="form-control">
+      <input type="text" name="lname" placeholder="Last Name" required>
+    </div>
+
+    <div class="form-control">
+      <input type="email" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="form-control phoneField">
+      <input id="tel" type="tel" name="phone"  placeholder= "Phone number" 
+   list="telephone" required>
+      <img id="image" src="" alt="network-icon">
+      <div class="alert alert-error">Hello</div>
+      <datalist id="telephone">
+        <option value="0802">
+        <option value="0808">
+        <option value="0708">
+        <option value="0812">
+        <option value="0701">
+        <option value="0902">
+      </datalist>
+    </div>
+
+    
+
+    <button type="submit">Sign Up</button>
+
+    <p>Already have an account? <br> <a href="#">Sign In</a></p>
+
+  </form>
+
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+
 </body>
+
 </html>
